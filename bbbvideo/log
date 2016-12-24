@@ -1,0 +1,703 @@
+this_opt = option: v
+Setting v=/home/debian/foo.mpg
+Adding file /home/debian/foo.mpg
+Config pushed level is now 2
+Config pushed level is now 3
+MPlayer svn r34540 (Debian), built with gcc-4.6 (C) 2000-2012 MPlayer Team
+CPU: ARM
+get_path('codecs.conf') -> '/home/debian/.mplayer/codecs.conf'
+Reading optional codecs config file /home/debian/.mplayer/codecs.conf: No such file or directory
+Reading optional codecs config file /etc/mplayer/codecs.conf: No such file or directory
+Using built-in default codecs.conf.
+init_freetype
+Using Unoptimized OnScreenDisplay
+get_path('fonts') -> '/home/debian/.mplayer/fonts'
+Configuration: --prefix=/usr --confdir=/etc/mplayer --enable-xvmc --enable-menu --disable-arts --language=all --disable-dvdread-internal --disable-libdvdcss-internal --disable-libmpeg2-internal --disable-ffmpeg_a --enable-debug --enable-joystick --disable-gui
+CommandLine: '-flip' '-demuxer' 'rawvideo' '-rawvideo' 'w=80:h=60:fps=8.6:format=rgb24' '-aspect' '4:3' '-vfm' 'raw' '-v' '-v' '-v' '/home/debian/foo.mpg'
+Using nanosleep() timing
+get_path('input.conf') -> '/home/debian/.mplayer/input.conf'
+Reading optional input config file /home/debian/.mplayer/input.conf: No such file or directory
+Parsing input config file /etc/mplayer/input.conf
+Input config file /etc/mplayer/input.conf parsed: 92 binds
+Setting up LIRC support...
+get_path('foo.mpg.conf') -> '/home/debian/.mplayer/foo.mpg.conf'
+
+[[[init getch2]]]
+
+Playing /home/debian/foo.mpg.
+get_path('sub/') -> '/home/debian/.mplayer/sub/'
+[file] File size is 2804076 bytes
+STREAM: [file] /home/debian/foo.mpg
+STREAM: Description: File
+STREAM: Author: Albeu
+STREAM: Comment: based on the code from ??? (probably Arpi)
+seek to 0x0
+s->pos=0  newpos=0  new_bufpos=0  buflen=0  
+rawvideo file format detected.
+==> Found video stream: 0
+[V] filefmt:26  fourcc:0x52474218  size:80x60  fps:8.600  ftime:=0.1163
+Load subtitles in /home/debian/
+get_path('sub/') -> '/home/debian/.mplayer/sub/'
+DEMUX: Append packet to d_video, len=14400  pts=0.000  pos=0  [packs: A=0 V=1]
+X11 opening display: :0
+vo: X11 color mask:  FFFF  (R:F800 G:7E0 B:1F)
+vo: X11 running at 1280x1024 with depth 16 and 16 bpp (":0" => local display)
+[x11] Detected wm supports NetWM.
+[x11] Detected wm supports FULLSCREEN state.
+[x11] Detected wm supports ABOVE state.
+[x11] Detected wm supports BELOW state.
+[x11] Current fstype setting honours FULLSCREEN ABOVE BELOW X atoms
+[gl] GLX chose visual with ID 0x41
+OpenGL extensions string:
+GL_ARB_multisample GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_polygon_offset GL_EXT_subtexture GL_EXT_texture_object GL_EXT_vertex_array GL_EXT_compiled_vertex_array GL_EXT_texture GL_EXT_texture3D GL_IBM_rasterpos_clip GL_ARB_point_parameters GL_EXT_draw_range_elements GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_separate_specular_color GL_EXT_texture_edge_clamp GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_ARB_multitexture GL_IBM_multimode_draw_arrays GL_IBM_texture_mirrored_repeat GL_3DFX_texture_compression_FXT1 GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_blend_func_separate GL_EXT_fog_coord GL_EXT_multi_draw_arrays GL_EXT_secondary_color GL_EXT_texture_env_add GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_INGR_blend_func_separate GL_MESA_resize_buffers GL_NV_blend_square GL_NV_light_max_exponent GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_SUN_multi_draw_arrays GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_EXT_framebuffer_object GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_MESA_window_pos GL_NV_packed_depth_stencil GL_NV_texture_rectangle GL_NV_vertex_program GL_ARB_depth_texture GL_ARB_occlusion_query GL_ARB_shadow GL_ARB_shadow_ambient GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_window_pos GL_ATI_envmap_bumpmap GL_ATI_fragment_shader GL_EXT_stencil_two_side GL_EXT_texture_cube_map GL_NV_depth_clamp GL_NV_fragment_program GL_NV_point_sprite GL_NV_vertex_program1_1 GL_APPLE_packed_pixels GL_APPLE_vertex_array_object GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_vertex_program GL_ARB_vertex_shader GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_EXT_depth_bounds_test GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_MESA_pack_invert GL_MESA_ycbcr_texture GL_ARB_depth_clamp GL_ARB_fragment_program_shadow GL_ARB_half_float_pixel GL_ARB_occlusion_query2 GL_ARB_point_sprite GL_ARB_shading_language_100 GL_ARB_sync GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ATI_blend_equation_separate GL_EXT_blend_equation_separate GL_OES_read_format GL_ARB_pixel_buffer_object GL_ARB_texture_compression_rgtc GL_ARB_texture_rectangle GL_ATI_texture_compression_3dc GL_EXT_pixel_buffer_object GL_EXT_texture_compression_rgtc GL_EXT_texture_mirror_clamp GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_shared_exponent GL_ARB_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_packed_depth_stencil GL_NV_fragment_program_option GL_APPLE_object_purgeable GL_ARB_vertex_array_object GL_ATI_separate_stencil GL_ATI_texture_mirror_once GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_gpu_program_parameters GL_EXT_texture_array GL_EXT_texture_compression_latc GL_EXT_texture_sRGB_decode GL_MESA_texture_array GL_ARB_cop
+==========================================================================
+Trying to force video codec driver family raw...
+Opening video decoder: [raw] RAW Uncompressed Video
+VDec: vo config request - 80 x 60 (preferred colorspace: RGB 24-bit)
+Trying filter chain: vo
+vo_x11: query_format was called: 52474218 (RGB 24-bit)
+vo_debug: query(RGB 24-bit) returned 0x0 (i=0) 
+Could not find matching colorspace - retrying with -vf scale...
+Opening video filter: [scale]
+SwScale params: -1 x -1 (-1=no scaling)
+Trying filter chain: scale vo
+vo_x11: query_format was called: 52474218 (RGB 24-bit)
+scale: query(RGB 24-bit) -> 0
+vo_x11: query_format was called: 50343434 (Planar 444P)
+scale: query(Planar 444P) -> 0
+vo_x11: query_format was called: 51343434 (Planar 444P 16-bit little-endian)
+scale: query(Planar 444P 16-bit little-endian) -> 0
+vo_x11: query_format was called: 34343451 (Planar 444P 16-bit big-endian)
+scale: query(Planar 444P 16-bit big-endian) -> 0
+vo_x11: query_format was called: 52343434 (Planar 444P 10-bit little-endian)
+scale: query(Planar 444P 10-bit little-endian) -> 0
+vo_x11: query_format was called: 34343452 (Planar 444P 10-bit big-endian)
+scale: query(Planar 444P 10-bit big-endian) -> 0
+vo_x11: query_format was called: 53343434 (Planar 444P 9-bit little-endian)
+scale: query(Planar 444P 9-bit little-endian) -> 0
+vo_x11: query_format was called: 34343453 (Planar 444P 9-bit big-endian)
+scale: query(Planar 444P 9-bit big-endian) -> 0
+vo_x11: query_format was called: 50323234 (Planar 422P)
+scale: query(Planar 422P) -> 0
+vo_x11: query_format was called: 51323234 (Planar 422P 16-bit little-endian)
+scale: query(Planar 422P 16-bit little-endian) -> 0
+vo_x11: query_format was called: 34323251 (Planar 422P 16-bit big-endian)
+scale: query(Planar 422P 16-bit big-endian) -> 0
+vo_x11: query_format was called: 52323234 (Planar 422P 10-bit little-endian)
+scale: query(Planar 422P 10-bit little-endian) -> 0
+vo_x11: query_format was called: 34323252 (Planar 422P 10-bit big-endian)
+scale: query(Planar 422P 10-bit big-endian) -> 0
+vo_x11: query_format was called: 53323234 (Planar 422P 9-bit little-endian)
+scale: query(Planar 422P 9-bit little-endian) -> 0
+vo_x11: query_format was called: 34323253 (Planar 422P 9-bit big-endian)
+scale: query(Planar 422P 9-bit big-endian) -> 0
+vo_x11: query_format was called: 32315659 (Planar YV12)
+scale: query(Planar YV12) -> 1
+vo_x11: query_format was called: 30323449 (Planar I420)
+scale: query(Planar I420) -> 1
+vo_x11: query_format was called: 51303234 (Planar 420P 16-bit little-endian)
+scale: query(Planar 420P 16-bit little-endian) -> 0
+vo_x11: query_format was called: 34323051 (Planar 420P 16-bit big-endian)
+scale: query(Planar 420P 16-bit big-endian) -> 0
+vo_x11: query_format was called: 52303234 (Planar 420P 10-bit little-endian)
+scale: query(Planar 420P 10-bit little-endian) -> 0
+vo_x11: query_format was called: 34323052 (Planar 420P 10-bit big-endian)
+scale: query(Planar 420P 10-bit big-endian) -> 0
+vo_x11: query_format was called: 53303234 (Planar 420P 9-bit little-endian)
+scale: query(Planar 420P 9-bit little-endian) -> 0
+vo_x11: query_format was called: 34323053 (Planar 420P 9-bit big-endian)
+scale: query(Planar 420P 9-bit big-endian) -> 0
+vo_x11: query_format was called: 41303234 (Planar 420P with alpha)
+scale: query(Planar 420P with alpha) -> 0
+vo_x11: query_format was called: 56555949 (Planar IYUV)
+scale: query(Planar IYUV) -> 1
+vo_x11: query_format was called: 39555659 (Planar YVU9)
+scale: query(Planar YVU9) -> 0
+vo_x11: query_format was called: 39304649 (Planar IF09)
+scale: query(Planar IF09) -> 0
+vo_x11: query_format was called: 50313134 (Planar 411P)
+scale: query(Planar 411P) -> 0
+vo_x11: query_format was called: 3231564e (Planar NV12)
+scale: query(Planar NV12) -> 0
+vo_x11: query_format was called: 3132564e (Planar NV21)
+scale: query(Planar NV21) -> 0
+vo_x11: query_format was called: 32595559 (Packed YUY2)
+scale: query(Packed YUY2) -> 0
+vo_x11: query_format was called: 59565955 (Packed UYVY)
+scale: query(Packed UYVY) -> 0
+vo_x11: query_format was called: 50303434 (Unknown 0x50303434)
+scale: query(Unknown 0x50303434) -> 0
+vo_x11: query_format was called: 42475220 (BGRA)
+scale: query(BGRA) -> 1
+vo_x11: query_format was called: 52474220 (RGBA)
+scale: query(RGBA) -> 0
+vo_x11: query_format was called: 42475218 (BGR 24-bit)
+scale: query(BGR 24-bit) -> 1
+vo_x11: query_format was called: 52474218 (RGB 24-bit)
+scale: query(RGB 24-bit) -> 0
+vo_x11: query_format was called: 47425218 (Planar GBR 24-bit)
+scale: query(Planar GBR 24-bit) -> 0
+vo_x11: query_format was called: 52474230 (RGB 48-bit LE)
+scale: query(RGB 48-bit LE) -> 0
+vo_x11: query_format was called: 524742b0 (RGB 48-bit BE)
+scale: query(RGB 48-bit BE) -> 0
+vo_x11: query_format was called: 42475210 (BGR 16-bit)
+scale: query(BGR 16-bit) -> 3
+vo_x11: query_format was called: 42475210 (BGR 16-bit)
+vo_debug: query(RGB 24-bit) returned 0x4C5 (i=0) 
+VDec: using RGB 24-bit as output csp (no 0)
+Movie-Aspect is 1.33:1 - prescaling to correct movie aspect.
+VO Config (80x60->80x60,flags=8,'MPlayer',0x52474218)
+vo_x11: query_format was called: 52474218 (RGB 24-bit)
+scale: query(RGB 24-bit) -> 0
+vo_x11: query_format was called: 50343434 (Planar 444P)
+scale: query(Planar 444P) -> 0
+vo_x11: query_format was called: 51343434 (Planar 444P 16-bit little-endian)
+scale: query(Planar 444P 16-bit little-endian) -> 0
+vo_x11: query_format was called: 34343451 (Planar 444P 16-bit big-endian)
+scale: query(Planar 444P 16-bit big-endian) -> 0
+vo_x11: query_format was called: 52343434 (Planar 444P 10-bit little-endian)
+scale: query(Planar 444P 10-bit little-endian) -> 0
+vo_x11: query_format was called: 34343452 (Planar 444P 10-bit big-endian)
+scale: query(Planar 444P 10-bit big-endian) -> 0
+vo_x11: query_format was called: 53343434 (Planar 444P 9-bit little-endian)
+scale: query(Planar 444P 9-bit little-endian) -> 0
+vo_x11: query_format was called: 34343453 (Planar 444P 9-bit big-endian)
+scale: query(Planar 444P 9-bit big-endian) -> 0
+vo_x11: query_format was called: 50323234 (Planar 422P)
+scale: query(Planar 422P) -> 0
+vo_x11: query_format was called: 51323234 (Planar 422P 16-bit little-endian)
+scale: query(Planar 422P 16-bit little-endian) -> 0
+vo_x11: query_format was called: 34323251 (Planar 422P 16-bit big-endian)
+scale: query(Planar 422P 16-bit big-endian) -> 0
+vo_x11: query_format was called: 52323234 (Planar 422P 10-bit little-endian)
+scale: query(Planar 422P 10-bit little-endian) -> 0
+vo_x11: query_format was called: 34323252 (Planar 422P 10-bit big-endian)
+scale: query(Planar 422P 10-bit big-endian) -> 0
+vo_x11: query_format was called: 53323234 (Planar 422P 9-bit little-endian)
+scale: query(Planar 422P 9-bit little-endian) -> 0
+vo_x11: query_format was called: 34323253 (Planar 422P 9-bit big-endian)
+scale: query(Planar 422P 9-bit big-endian) -> 0
+vo_x11: query_format was called: 32315659 (Planar YV12)
+scale: query(Planar YV12) -> 1
+vo_x11: query_format was called: 30323449 (Planar I420)
+scale: query(Planar I420) -> 1
+vo_x11: query_format was called: 51303234 (Planar 420P 16-bit little-endian)
+scale: query(Planar 420P 16-bit little-endian) -> 0
+vo_x11: query_format was called: 34323051 (Planar 420P 16-bit big-endian)
+scale: query(Planar 420P 16-bit big-endian) -> 0
+vo_x11: query_format was called: 52303234 (Planar 420P 10-bit little-endian)
+scale: query(Planar 420P 10-bit little-endian) -> 0
+vo_x11: query_format was called: 34323052 (Planar 420P 10-bit big-endian)
+scale: query(Planar 420P 10-bit big-endian) -> 0
+vo_x11: query_format was called: 53303234 (Planar 420P 9-bit little-endian)
+scale: query(Planar 420P 9-bit little-endian) -> 0
+vo_x11: query_format was called: 34323053 (Planar 420P 9-bit big-endian)
+scale: query(Planar 420P 9-bit big-endian) -> 0
+vo_x11: query_format was called: 41303234 (Planar 420P with alpha)
+scale: query(Planar 420P with alpha) -> 0
+vo_x11: query_format was called: 56555949 (Planar IYUV)
+scale: query(Planar IYUV) -> 1
+vo_x11: query_format was called: 39555659 (Planar YVU9)
+scale: query(Planar YVU9) -> 0
+vo_x11: query_format was called: 39304649 (Planar IF09)
+scale: query(Planar IF09) -> 0
+vo_x11: query_format was called: 50313134 (Planar 411P)
+scale: query(Planar 411P) -> 0
+vo_x11: query_format was called: 3231564e (Planar NV12)
+scale: query(Planar NV12) -> 0
+vo_x11: query_format was called: 3132564e (Planar NV21)
+scale: query(Planar NV21) -> 0
+vo_x11: query_format was called: 32595559 (Packed YUY2)
+scale: query(Packed YUY2) -> 0
+vo_x11: query_format was called: 59565955 (Packed UYVY)
+scale: query(Packed UYVY) -> 0
+vo_x11: query_format was called: 50303434 (Unknown 0x50303434)
+scale: query(Unknown 0x50303434) -> 0
+vo_x11: query_format was called: 42475220 (BGRA)
+scale: query(BGRA) -> 1
+vo_x11: query_format was called: 52474220 (RGBA)
+scale: query(RGBA) -> 0
+vo_x11: query_format was called: 42475218 (BGR 24-bit)
+scale: query(BGR 24-bit) -> 1
+vo_x11: query_format was called: 52474218 (RGB 24-bit)
+scale: query(RGB 24-bit) -> 0
+vo_x11: query_format was called: 47425218 (Planar GBR 24-bit)
+scale: query(Planar GBR 24-bit) -> 0
+vo_x11: query_format was called: 52474230 (RGB 48-bit LE)
+scale: query(RGB 48-bit LE) -> 0
+vo_x11: query_format was called: 524742b0 (RGB 48-bit BE)
+scale: query(RGB 48-bit BE) -> 0
+vo_x11: query_format was called: 42475210 (BGR 16-bit)
+scale: query(BGR 16-bit) -> 3
+vo_x11: query_format was called: 42475210 (BGR 16-bit)
+SwScale: scaling 80x60 RGB 24-bit to 80x60 BGR 16-bit  
+vo_x11: query_format was called: 42475210 (BGR 16-bit)
+REQ: flags=0x4C7  req=0x0  
+VO: [x11] 80x60 => 80x60 BGR 16-bit  [flip]
+VO: Description: X11 ( XImage/Shm )
+VO: Author: Aaron Holtzman <aholtzma@ess.engr.uvic.ca>
+vo_x11: query_format was called: 42475210 (BGR 16-bit)
+Sharing memory.
+Selected video codec: [rawrgb24] vfm: raw (RAW RGB24)
+==========================================================================
+Audio: no sound
+Freeing 0 unused audio chunks.
+Starting playback...
+ds_fill_buffer(d_video) called
+*** [scale] Exporting mp_image_t, 80x60x24bpp RGB packed, 14400 bytes
+(imgfmt: 52474218, planes: (nil),(nil),(nil) strides: 0,0,0, chroma: 0x0, shift: h:0,v:0)
+*** [vo] Allocating mp_image_t, 80x60x16bpp BGR packed, 9600 bytes
+(imgfmt: 42475210, planes: 0x585a20,(nil),(nil) strides: 160,0,0, chroma: 0x0, shift: h:0,v:0)
+Unicode font: 5179 glyphs.
+Unicode font: 5179 glyphs.
+OSD chg: 6  V: no  pb:-1  
+OSD chg: 5  V: no  pb:-1  
+OSD chg: 3  V: no  pb:-1  
+OSD chg: 2  V: no  pb:-1  
+*** ftime=0.000 ***
+V:   0.0   1/  1 ??% ??% ??,?% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=0.116  pos=14400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   0.1   2/  2 ??% ??% ??,?% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=0.233  pos=28800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   0.2   3/  3 ??% ??% ??,?% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=0.349  pos=43200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   0.3   4/  4 ??% ??% ??,?% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=0.465  pos=57600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   0.5   5/  5 ??% ??% ??,?% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=0.581  pos=72000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   0.6   6/  6  0% 14%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=0.698  pos=86400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   0.7   7/  7  0% 12%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=0.814  pos=100800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   0.8   8/  8  0% 11%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=0.930  pos=115200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   0.9   9/  9  0% 10%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=1.047  pos=129600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   1.0  10/ 10  0%  9%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=1.163  pos=144000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   1.2  11/ 11  0%  8%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=1.279  pos=158400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   1.3  12/ 12  0%  8%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=1.395  pos=172800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   1.4  13/ 13  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=1.512  pos=187200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   1.5  14/ 14  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=1.628  pos=201600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   1.6  15/ 15  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=1.744  pos=216000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   1.7  16/ 16  0%  6%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=1.860  pos=230400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   1.9  17/ 17  0%  6%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=1.977  pos=244800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   2.0  18/ 18  0%  6%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=2.093  pos=259200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   2.1  19/ 19  0%  6%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=2.209  pos=273600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   2.2  20/ 20  0%  6%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=2.326  pos=288000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   2.3  21/ 21  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=2.442  pos=302400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   2.4  22/ 22  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=2.558  pos=316800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   2.6  23/ 23  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=2.674  pos=331200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   2.7  24/ 24  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=2.791  pos=345600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   2.8  25/ 25  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=2.907  pos=360000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   2.9  26/ 26  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=3.023  pos=374400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   3.0  27/ 27  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=3.140  pos=388800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   3.1  28/ 28  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=3.256  pos=403200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   3.3  29/ 29  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=3.372  pos=417600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   3.4  30/ 30  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=3.488  pos=432000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   3.5  31/ 31  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=3.605  pos=446400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   3.6  32/ 32  0%  4%  0.0% 0 0 [Jds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=3.721  pos=460800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   3.7  33/ 33  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=3.837  pos=475200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   3.8  34/ 34  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=3.953  pos=489600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   4.0  35/ 35  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=4.070  pos=504000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   4.1  36/ 36  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=4.186  pos=518400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   4.2  37/ 37  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=4.302  pos=532800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   4.3  38/ 38  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=4.419  pos=547200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   4.4  39/ 39  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=4.535  pos=561600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   4.5  40/ 40  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=4.651  pos=576000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   4.7  41/ 41  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=4.767  pos=590400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   4.8  42/ 42  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=4.884  pos=604800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   4.9  43/ 43  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=5.000  pos=619200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   5.0  44/ 44  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=5.116  pos=633600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   5.1  45/ 45  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=5.233  pos=648000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   5.2  46/ 46  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=5.349  pos=662400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   5.3  47/ 47  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=5.465  pos=676800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   5.5  48/ 48  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=5.581  pos=691200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   5.6  49/ 49  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=5.698  pos=705600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   5.7  50/ 50  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=5.814  pos=720000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   5.8  51/ 51  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=5.930  pos=734400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   5.9  52/ 52  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=6.047  pos=748800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   6.0  53/ 53  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=6.163  pos=763200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   6.2  54/ 54  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=6.279  pos=777600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   6.3  55/ 55  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=6.395  pos=792000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   6.4  56/ 56  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=6.512  pos=806400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   6.5  57/ 57  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=6.628  pos=820800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   6.6  58/ 58  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=6.744  pos=835200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   6.7  59/ 59  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=6.860  pos=849600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   6.9  60/ 60  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=6.977  pos=864000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   7.0  61/ 61  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=7.093  pos=878400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   7.1  62/ 62  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=7.209  pos=892800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   7.2  63/ 63  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=7.326  pos=907200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   7.3  64/ 64  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=7.442  pos=921600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   7.4  65/ 65  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=7.558  pos=936000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   7.6  66/ 66  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=7.674  pos=950400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   7.7  67/ 67  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=7.791  pos=964800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   7.8  68/ 68  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=7.907  pos=979200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   7.9  69/ 69  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=8.023  pos=993600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   8.0  70/ 70  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=8.140  pos=1008000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   8.1  71/ 71  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=8.256  pos=1022400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   8.3  72/ 72  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=8.372  pos=1036800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   8.4  73/ 73  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=8.488  pos=1051200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   8.5  74/ 74  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=8.605  pos=1065600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   8.6  75/ 75  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=8.721  pos=1080000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   8.7  76/ 76  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=8.837  pos=1094400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   8.8  77/ 77  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=8.953  pos=1108800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   9.0  78/ 78  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=9.070  pos=1123200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   9.1  79/ 79  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=9.186  pos=1137600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   9.2  80/ 80  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=9.302  pos=1152000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   9.3  81/ 81  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=9.419  pos=1166400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   9.4  82/ 82  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=9.535  pos=1180800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   9.5  83/ 83  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=9.651  pos=1195200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   9.7  84/ 84  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=9.767  pos=1209600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   9.8  85/ 85  0%  4%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=9.884  pos=1224000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:   9.9  86/ 86  0%  4%  0.0% 0 0 [Jds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=10.000  pos=1238400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  10.0  87/ 87  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=10.116  pos=1252800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  10.1  88/ 88  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=10.233  pos=1267200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  10.2  89/ 89  0%  5%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=10.349  pos=1281600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  10.3  90/ 90  0%  5%  0.0% 0 0 [Jds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=10.465  pos=1296000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  10.5  91/ 91  0%  6%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=10.581  pos=1310400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  10.6  92/ 92  0%  6%  0.0% 0 0 [Jds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=10.698  pos=1324800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  10.7  93/ 93  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=10.814  pos=1339200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  10.8  94/ 94  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=10.930  pos=1353600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  10.9  95/ 95  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=11.047  pos=1368000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  11.0  96/ 96  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=11.163  pos=1382400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  11.2  97/ 97  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=11.279  pos=1396800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  11.3  98/ 98  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=11.395  pos=1411200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  11.4  99/ 99  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=11.512  pos=1425600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  11.5 100/100  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=11.628  pos=1440000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  11.6 101/101  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=11.744  pos=1454400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  11.7 102/102  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=11.860  pos=1468800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  11.9 103/103  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=11.977  pos=1483200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  12.0 104/104  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=12.093  pos=1497600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  12.1 105/105  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=12.209  pos=1512000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  12.2 106/106  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=12.326  pos=1526400  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  12.3 107/107  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=12.442  pos=1540800  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  12.4 108/108  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=12.558  pos=1555200  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  12.6 109/109  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=12.674  pos=1569600  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  12.7 110/110  0%  7%  0.0% 0 0 [J
+ds_fill_buffer(d_video) called
+DEMUX: Append packet to d_video, len=14400  pts=12.791  pos=1584000  [packs: A=0 V=1]
+*** ftime=0.116 ***
+V:  12.8 111/111  0%  7%  0.0% 0 0 [J
+
+*** uninit(0x1AC9)
+Uninit video: raw
+DEMUXER: freeing rawvideo demuxer at 0x39b868
+DEMUXER: freeing sh_video at 0x395c68
+
+[[[uninit getch2]]]
+vo: uninit ...
