@@ -111,7 +111,11 @@ int main( int argc, char **argv )
 	QObject::connect(button2, SIGNAL(clicked()), thread, SLOT(startRecording()));
 	thread->start();
 	
-        //  Run motor left...
+        //  Drive up...
+	QObject::connect(button4, SIGNAL(clicked()), myArm, SLOT(runYClockwise()));
+	thread->start();
+
+        //  Drive left...
 	QObject::connect(button6, SIGNAL(clicked()), myArm, SLOT(runXClockwise()));
 	thread->start();
 	
@@ -119,8 +123,12 @@ int main( int argc, char **argv )
 	QObject::connect(button7, SIGNAL(clicked()), myArm, SLOT(runStop()));
 	thread->start();
 	
-	// Run motor right...
+	// Drive right...
 	QObject::connect(button8, SIGNAL(clicked()), myArm, SLOT(runXCounterClockwise()));
+	thread->start();
+	
+	// Drive down...
+	QObject::connect(button10, SIGNAL(clicked()), myArm, SLOT(runYCounterClockwise()));
 	thread->start();
 	
 	myWidget->show();

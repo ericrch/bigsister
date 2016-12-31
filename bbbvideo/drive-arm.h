@@ -9,9 +9,17 @@
 
 #define LEFT 0
 #define RIGHT 1
-#define XAXIS 0
-#define YAXIS 1
+#define XAXIS 1
+#define YAXIS 0
 
+#define P8 8
+
+#define XPWR 19
+#define XPIN1 11
+#define XPIN2 15
+#define YPWR 13
+#define YPIN1 7
+#define YPIN2 8
 
 
 //
@@ -34,7 +42,7 @@ Q_OBJECT;
     static const int delay = 5; // delay in milliseconds... how long to wait for bus, CPU, etc... 
     static const float PWM_HZ = 100.0f;   /* 100 Hz */
     static const float duty_A = 00.0f;    /* 20% Duty cycle for PWM 0_A output */
-    static const float duty_B = 75.0f;    /* 50% Duty cycle for PWM 0_B output*/
+    static const float duty_B = 10.0f;    /* 50% Duty cycle for PWM 0_B output*/
 
     void runArm(int isClockwise);
 
