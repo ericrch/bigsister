@@ -17,8 +17,8 @@ int main( int argc, char **argv )
 {
 	int iImageWidth=640; // Width of the  displayed video
 	int iImageHeight=480;// Same Height;
-	int QWidth=40;       // These next two are about where, on screen, to draw the window. 
-	int QHeight=50;
+	int QWidth=1;       // These next two are about where, on screen, to draw the window. 
+	int QHeight=1;
 	int iButtonPad=30;   // Space between buttons (make it larger than iButtonHeight!)
 	int iButtonHeight = 25;
 	int iButtonWidth = 100;

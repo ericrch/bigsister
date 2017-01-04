@@ -9,14 +9,19 @@
 // This is where we choose which motor to drive.
 // 
 
-DriveArm::DriveArm() {}
-DriveArm::~DriveArm() {}
+DriveArm::DriveArm() {
+        iolib_init();
+};
+
+DriveArm::~DriveArm() {
+        iolib_free();
+};
 
 void DriveArm::setMyArm(int myarm) {
 	printf("DriveArm::setMyArm\n");
 	DriveArm::iMyArm = myarm;
 
-	iolib_init();
+//	iolib_init();
 	printf("iolib_init\n");
         BBBIO_sys_Enable_GPIO(BBBIO_GPIO2);
 	printf("BBBIO sys Enable GPIO\n");
@@ -114,7 +119,7 @@ void  DriveArm::runStop(void) {
 	pin_low(P8,YPIN1);
 
         BBBIO_ehrPWM_Disable(BBBIO_PWMSS2);
-	iolib_free();
+//	iolib_free();
 };
 
 

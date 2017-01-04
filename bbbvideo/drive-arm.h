@@ -42,7 +42,7 @@ Q_OBJECT;
     static const int delay = 5; // delay in milliseconds... how long to wait for bus, CPU, etc... 
     static const float PWM_HZ = 100.0f;   /* 100 Hz */
     static const float duty_A = 00.0f;    /* 20% Duty cycle for PWM 0_A output */
-    static const float duty_B = 10.0f;    /* 50% Duty cycle for PWM 0_B output*/
+    static const float duty_B = 80.0f;    /* 50% Duty cycle for PWM 0_B output*/
 
     void runArm(int isClockwise);
 
