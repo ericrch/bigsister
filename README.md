@@ -9,4 +9,4 @@ sudo apt-get install libqt4-assistant libqt4-core libqt4-dbg libqt4-dbus libqt4-
 
 
 -- BBBIOlib
-https://github.com/VegetableAvenger/BBBIOlib/tree/master/BBBio_lib
+-  https://github.com/VegetableAvenger/BBBIOlib/tree/master/BBBio_lib
