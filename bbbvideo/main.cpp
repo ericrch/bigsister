@@ -45,6 +45,11 @@ int main( int argc, char **argv )
 	myLabel.setGeometry(10, 10, iImageWidth, iImageHeight);
 	myLabel.setPixmap(QPixmap::fromImage(myImage));
 
+ 	//	
+	// About button position...
+	// buttoncwXXX1->setGeometry(X, Y, Width, Height);
+	//
+
 	//create a FFC button
 	QPushButton *button1 = new QPushButton("Run FFC", myWidget);
 	button1->setGeometry(iButtonPad, iImageHeight+iButtonPad, iButtonWidth, iButtonHeight);
@@ -53,25 +58,13 @@ int main( int argc, char **argv )
 	QPushButton *button2 = new QPushButton("Record", myWidget);
 	button2->setGeometry(iImageWidth-iButtonWidth-iButtonPad, iImageHeight+iButtonPad, iButtonWidth, iButtonHeight);
 
-///////
-
-	//create UpLeft button
-	//QPushButton *button3 = new QPushButton("UpLeft", myWidget);
-	//button3->setGeometry(iButtonPad, iImageHeight+2*iButtonPad, iButtonWidth, iButtonHeight);
-
 	//create Up button
 	QPushButton *button4 = new QPushButton("Up", myWidget);
 	button4->setGeometry((iImageWidth-iButtonWidth)/2, iImageHeight+2*iButtonPad, iButtonWidth, iButtonHeight);
 
-	//create UpRight button
-	//QPushButton *button5 = new QPushButton("UpRight", myWidget);
-	//button5->setGeometry(iImageWidth-iButtonWidth-2*iButtonPad, iImageHeight+2*iButtonPad, iButtonWidth, iButtonHeight);
-
-///////
-
 	//create Left button
 	QPushButton *button6 = new QPushButton("Left", myWidget);
-	button6->setGeometry(3*iButtonPad, iImageHeight+3*iButtonPad, iButtonWidth, iButtonHeight);
+	button6->setGeometry(5*iButtonPad, iImageHeight+3*iButtonPad, iButtonWidth, iButtonHeight);
 
 	//create stop button
 	QPushButton *button7 = new QPushButton("STOP", myWidget);
@@ -79,23 +72,12 @@ int main( int argc, char **argv )
 
 	//create Right button
 	QPushButton *button8 = new QPushButton("Right", myWidget);
-	button8->setGeometry(iImageWidth-iButtonWidth-3*iButtonPad, iImageHeight+3*iButtonPad, iButtonWidth, iButtonHeight);
-
-///////
-
-	//create Down Left button
-	//QPushButton *button9 = new QPushButton("Down Left", myWidget);
-	//button9->setGeometry(2*iButtonPad, iImageHeight+4*iButtonPad, iButtonWidth, iButtonHeight);
+	button8->setGeometry(iImageWidth-iButtonWidth-5*iButtonPad, iImageHeight+3*iButtonPad, iButtonWidth, iButtonHeight);
 
 	//create  Down button
 	QPushButton *button10 = new QPushButton("Down", myWidget);
 	button10->setGeometry((iImageWidth-iButtonWidth)/2, iImageHeight+4*iButtonPad, iButtonWidth, iButtonHeight);
 
-	//create Down Right button
-	//QPushButton *button11 = new QPushButton("DownRight", myWidget);
-	//button11->setGeometry(iImageWidth-iButtonWidth-2*iButtonPad, iImageHeight+4*iButtonPad, iButtonWidth, iButtonHeight);
-
-///////
 	// Create a robot arm
 	DriveArm *myArm = new DriveArm();
 
