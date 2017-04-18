@@ -95,11 +95,11 @@ int main( int argc, char **argv )
 	thread->start();
 	
         //  Drive up...
-	QObject::connect(button4, SIGNAL(clicked()), myArm, SLOT(runYClockwise()));
+	QObject::connect(button4, SIGNAL(clicked()), myArm, SLOT(runXClockwise()));
 	thread->start();
 
         //  Drive left...
-	QObject::connect(button6, SIGNAL(clicked()), myArm, SLOT(runXClockwise()));
+	QObject::connect(button6, SIGNAL(clicked()), myArm, SLOT(runYCounterClockwise()));
 	thread->start();
 	
 	//  Stop motor 
@@ -107,11 +107,11 @@ int main( int argc, char **argv )
 	thread->start();
 	
 	// Drive right...
-	QObject::connect(button8, SIGNAL(clicked()), myArm, SLOT(runXCounterClockwise()));
+	QObject::connect(button8, SIGNAL(clicked()), myArm, SLOT(runYClockwise()));
 	thread->start();
 	
 	// Drive down...
-	QObject::connect(button10, SIGNAL(clicked()), myArm, SLOT(runYCounterClockwise()));
+	QObject::connect(button10, SIGNAL(clicked()), myArm, SLOT(runXCounterClockwise()));
 	thread->start();
 	
 	myWidget->show();
