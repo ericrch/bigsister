@@ -9,6 +9,7 @@
 #include <QDataStream>
 #include <QIODevice>
 #include <QtGlobal>
+#include <QDateTime>
 #include <cstdio>
 #include <iostream>
 
@@ -29,8 +30,8 @@ void LeptonThread::run()
 {
 	//create the initial image
 	myImage = QImage(80, 60, QImage::Format_RGB888);
-	// ERCH
-	uint myFrameCount=0;
+
+	QDateTime local(QDateTime::currentDateTime());
         LeptonThread::stopRecording();   // initialize variable
 	//open spi port
 	SpiOpenPort(0);
@@ -55,9 +56,6 @@ void LeptonThread::run()
 					SpiOpenPort(0);
 				}
 			}
-		}
-		if(resets >= 30) {
-			qDebug() << "done reading, resets: " << resets;
 		}
 
 		frameBuffer = (uint16_t *)result;
@@ -106,25 +104,18 @@ void LeptonThread::run()
 		
 
                 // ERCH  Serialize image data 
-		if (isRecording) {
-			QString myFile("bbbout/my_video_frame_");
+		if (checkRecording()) {
+			QString myFile("/root/bbbout/BigSisCap_");
 			QString mySuffix(".bmp");
-			QString myCountOut("000000");
+			QDateTime local(QDateTime::currentDateTime());
 
-			myFrameCount++;
-			int len = (QString::number(myFrameCount, 10)).size();
-
-			myCountOut.replace(6-len, len, QString::number(myFrameCount, 10));
-			myFile.append(&myCountOut);
+			myFile.append(local.toString("yyyy-MM-dd__HH.mm.ss.zzz"));
 			myFile.append(&mySuffix);
-
-			//QImageWriter writer("/var/my_video_pipe","BMP");
 			QImageWriter writer(myFile, "BMP");
 			writer.setFormat("BMP");
 			writer.setQuality(100);
 			writer.setCompression(0);
 			writer.write(myImage);
-			// ERCH
 		}
 
 		//lets emit the signal for update
@@ -142,9 +133,25 @@ void LeptonThread::performFFC() {
 }
 
 void LeptonThread::startRecording() {
+//	qDebug() << "       LeptonThread::startRecording() isRecording = " << isRecording;
 	isRecording = 1;
 }
 
 void LeptonThread::stopRecording() {
+//	qDebug() << "       LeptonThread::stopRecording() isRecording = " << isRecording;
 	isRecording = 0;
+}
+
+bool LeptonThread::checkRecording() {
+//	qDebug() << "LeptonThread::checkRecording() isRecording = " << isRecording;
+	return isRecording;
+}
+
+void LeptonThread::setRecording() {
+//	qDebug() << "LeptonThread::setRecording() isRecording = " << isRecording;
+	if (checkRecording()) {
+		stopRecording();
+	} else {
+		startRecording();	
+	}
 }

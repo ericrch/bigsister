@@ -20,10 +20,7 @@ void DriveArm::setMyArm(int myarm) {
 	printf("DriveArm::setMyArm\n");
 	DriveArm::iMyArm = myarm;
 
-//	iolib_init();
-	printf("iolib_init\n");
         BBBIO_sys_Enable_GPIO(BBBIO_GPIO2);
-	printf("BBBIO sys Enable GPIO\n");
 
         if (getMyArm()) {
 	    pin_high(P8,XPWR);
@@ -95,30 +92,18 @@ void  DriveArm::runArm(int isClockwise) {
 		}
 	}
 
-	iolib_delay_ms(delay);
-	if(BBBIO_PWMSS_Setting(BBBIO_PWMSS2 , PWM_HZ, duty_B, duty_B)){
-		printf("ERCH PWMSS is Set\n");
-	} else {
-		printf("ERCH PWMSS FAILED!!!!\n");
-	};
-
-	iolib_delay_ms(delay);
-	BBBIO_ehrPWM_Enable(BBBIO_PWMSS2);
-	
-	emit ;
+	emit;
 };
 
 
 void  DriveArm::runStop(void) {
+	printf("DriveArm:runStop\n");
 	pin_low(P8,XPWR);
 	pin_low(P8,XPIN1);
 	pin_low(P8,XPIN1);
 	pin_low(P8,YPWR);
 	pin_low(P8,YPIN1);
 	pin_low(P8,YPIN1);
-
-        BBBIO_ehrPWM_Disable(BBBIO_PWMSS2);
-//	iolib_free();
 };
 
 

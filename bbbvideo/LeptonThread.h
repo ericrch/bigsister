@@ -28,6 +28,8 @@ public slots:
   void performFFC();
   void startRecording();
   void stopRecording();
+  void setRecording();
+  bool checkRecording();
 //  QTextStream LeptonThread::qStdOut();
 
 signals:

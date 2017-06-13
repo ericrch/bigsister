@@ -40,22 +40,28 @@ int main( int argc, char **argv )
 		}
 	}
 
+	//create a thread to gather SPI data
+	//when the thread emits updateImage, the label should update its image accordingly
+	LeptonThread *thread = new LeptonThread();
+
+
 	//create a label, and set it's image to the placeholder
 	MyLabel myLabel(myWidget);
 	myLabel.setGeometry(10, 10, iImageWidth, iImageHeight);
 	myLabel.setPixmap(QPixmap::fromImage(myImage));
 
- 	//	
+ 	//////////////////////////////////////////////////	
 	// About button position...
 	// buttoncwXXX1->setGeometry(X, Y, Width, Height);
-	//
+ 	//////////////////////////////////////////////////	
 
 	//create a FFC button
 	QPushButton *button1 = new QPushButton("Run FFC", myWidget);
 	button1->setGeometry(iButtonPad, iImageHeight+iButtonPad, iButtonWidth, iButtonHeight);
 
 	//create a Record button
-	QPushButton *button2 = new QPushButton("Record", myWidget);
+	QPushButton *button2 = new QPushButton(myWidget);
+	button2->setText(thread->checkRecording() ? "Stop Record" : "Record");
 	button2->setGeometry(iImageWidth-iButtonWidth-iButtonPad, iImageHeight+iButtonPad, iButtonWidth, iButtonHeight);
 
 	//create Up button
@@ -81,9 +87,6 @@ int main( int argc, char **argv )
 	// Create a robot arm
 	DriveArm *myArm = new DriveArm();
 
-	//create a thread to gather SPI data
-	//when the thread emits updateImage, the label should update its image accordingly
-	LeptonThread *thread = new LeptonThread();
 	QObject::connect(thread, SIGNAL(updateImage(QImage)), &myLabel, SLOT(setImage(QImage)));
 	
 	//connect ffc button to the thread's ffc action
@@ -91,7 +94,7 @@ int main( int argc, char **argv )
 	thread->start();
 	
 	//connect record button to   global in the thread ...
-	QObject::connect(button2, SIGNAL(clicked()), thread, SLOT(startRecording()));
+	QObject::connect(button2, SIGNAL(clicked()), thread, SLOT(setRecording()));
 	thread->start();
 	
         //  Drive up...
